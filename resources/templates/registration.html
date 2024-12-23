@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MusicHub Register </title>
+<link rel="stylesheet" th:href="@{/css/registration.css}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="css/img.jpg" alt="">
+      <h1><marquee>MusicHub</marquee></h1>
+    </div>
+  </header>
+  <section>
+    <div class="register-container">
+      <header>
+        <h1>Sign up to start listening</h1>
+      </header>
+      <form action="register" method="post">
+        <label>User Name</label>
+        <input type="text" name="username" />
+        <br>
+        <label>E-mail</label>
+        <input type="text" name="email" />
+        <br>
+        <label>Password</label>
+        <input type="password" name="password" />
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+        <input type="radio" name="gender" value="Other" />Other
+        <br>
+
+        <label>Role</label>
+        <input type="radio" name="role" value="admin" />Admin
+        <input type="radio" name="role" value="customer" />Customer
+        <br>
+        <label>Address</label>
+        <textarea name="address"></textarea>
+        <br>
+        <input type="submit" value="Submit" />
+        <p>Already have an account? <a href="login">Login here</a></p>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
